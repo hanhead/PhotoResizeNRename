@@ -1,3 +1,3 @@
-#Bath Job for Photo Resizing & Rename
+# Bath Job for Photo Resizing & Rename
 
 !(screenshot.png)
