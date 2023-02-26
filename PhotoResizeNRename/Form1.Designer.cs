@@ -44,6 +44,7 @@
             textBox4 = new TextBox();
             label3 = new Label();
             button3 = new Button();
+            progressBar1 = new ProgressBar();
             folderBrowserDialogConvertedImageFolder = new FolderBrowserDialog();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -130,6 +131,7 @@
             tableLayoutPanel2.Controls.Add(textBox4, 3, 0);
             tableLayoutPanel2.Controls.Add(label3, 3, 1);
             tableLayoutPanel2.Controls.Add(button3, 4, 0);
+            tableLayoutPanel2.Controls.Add(progressBar1, 0, 1);
             tableLayoutPanel2.Location = new Point(3, 574);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
@@ -197,6 +199,15 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // progressBar1
+            // 
+            tableLayoutPanel2.SetColumnSpan(progressBar1, 3);
+            progressBar1.Dock = DockStyle.Fill;
+            progressBar1.Location = new Point(3, 27);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(394, 19);
+            progressBar1.TabIndex = 7;
+            // 
             // frmPhotoResizeNRename
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -230,5 +241,6 @@
         private TextBox textBox4;
         private Label label3;
         private Button button3;
+        private ProgressBar progressBar1;
     }
 }
